@@ -2,6 +2,7 @@ package supersymmetry.common;
 
 import gregtech.api.GregTechAPI;
 import gregtech.api.block.VariantItemBlock;
+import gregtech.common.items.MetaItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -31,7 +32,6 @@ import java.util.function.Function;
 public class CommonProxy {
 
     public void preLoad(){
-        SusyOrePrefix.init();
         SusyStoneTypes.init();
         SuSyRecipeMaps.init();
     }
@@ -68,6 +68,13 @@ public class CommonProxy {
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void registerMaterials(@NotNull GregTechAPI.MaterialEvent event) {
         SusyMaterials.init();
+    }
+
+    @SubscribeEvent(priority = EventPriority.HIGH)
+    public static void postRegisterMaterials(@NotNull GregTechAPI.PostMaterialEvent event) {
+        MetaItems.addOrePrefix(SusyOrePrefix.catalystPellet);
+        MetaItems.addOrePrefix(SusyOrePrefix.catalystBed);
+        SusyMaterials.removeFlags();
     }
 
     @SubscribeEvent()

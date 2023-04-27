@@ -1,5 +1,6 @@
 package supersymmetry.loaders.recipes;
 
+<<<<<<< HEAD
 import static gregtech.api.recipes.RecipeMaps.EXTRUDER_RECIPES;
 import static gregtech.api.recipes.RecipeMaps.FORGE_HAMMER_RECIPES;
 import static gregtech.api.recipes.RecipeMaps.MACERATOR_RECIPES;
@@ -12,6 +13,9 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
+=======
+import gregtech.api.recipes.GTRecipeHandler;
+>>>>>>> upstream/main
 import gregtech.api.recipes.ModHandler;
 import gregtech.api.unification.material.Materials;
 import gregtech.common.blocks.MetaBlocks;
@@ -30,7 +34,9 @@ public class SuSyRecipeLoader {
         CoagulationRecipes.init();
         VulcanizationRecipes.init();
         SusyOreRecipeHandler.init();
+        SuSyMaterialRecipeHandler.init();
         registerStoneRecipes();
+        GTRecipeHandler.removeAllRecipes(ELECTROLYZER_RECIPES);
         // make more loaders to categorize recipes and what is added
     }
 

@@ -62,7 +62,7 @@ material.anorthite=Anorthite
 material.forsterite=Forsterite
 material.lizardite=Lizardite
 
-# Ore Stone Types
+# Ore Prefixes (%s is the localised material name)
 item.material.oreprefix.oreGabbro=Gabbro %s Ore
 item.material.oreprefix.oreGneiss=Gneiss %s Ore
 item.material.oreprefix.oreGraphite=Graphite %s Ore
@@ -74,6 +74,9 @@ item.material.oreprefix.oreShale=Shale %s Ore
 item.material.oreprefix.oreSlate=Slate %s Ore
 item.material.oreprefix.oreSoapstone=Soapstone %s Ore
 item.material.oreprefix.oreKimberlite=Kimberlite %s Ore
+item.material.oreprefix.catalystBed=%s Catalyst Bed
+item.material.oreprefix.catalystPellet=%s Catalyst Pellet
+
 
 # Machines/Multiblocks
 gregtech.machine.magnetic_refrigerator.name=Magnetic Refrigerator
@@ -90,10 +93,13 @@ gregtech.machine.drum.lead.name=Lead Drum
 gregtech.machine.polymerization_tank.name=Polymerization Tank
 gregtech.machine.fluidized_bed_reactor.name=Fluidized Bed Reactor
 
+gregtech.machine.electrolytic_cell.name=Electrolytic Cell
+
 # Properties
 gregtech.recipe.plasma_requirement=Requires plasma: %s
 
 # Latex Collector
+gregtech.machine.latex_collector.steam=Needs Steam!
 gregtech.machine.latex_collector.tooltip=Collects latex from adjacent rubber tree log. Yields %d mL of latex per tick.
 gregtech.machine.latex_collector.bronze.name=Steam Latex Collector
 gregtech.machine.latex_collector.lv.name=Basic Latex Collector
@@ -102,17 +108,20 @@ gregtech.machine.latex_collector.hv.name=Advanced Latex Collector II
 gregtech.machine.latex_collector.ev.name=Advanced Latex Collector III
 
 # Vulcanizing Press
-gregtech.machine.vulcanizing_press.steam.name=Steam Vulcanizing Press
+gregtech.machine.vulcanizing_press_bronze.name=Steam Vulcanizing Press
+gregtech.machine.vulcanizing_press_steel.name=High Pressure Steam Vulcanizing Press
 gregtech.machine.vulcanizing_press.lv.name=Basic Vulcanizing Press
 gregtech.machine.vulcanizing_press.mv.name=Advanced Vulcanizing Press
 gregtech.machine.vulcanizing_press.hv.name=Advanced Vulcanizing Press II
 gregtech.machine.vulcanizing_press.ev.name=Advanced Vulcanizing Press III
 
 # Steam Mixer
-gregtech.machine.mixer.steam.name=Steam Mixer
+gregtech.machine.mixer_bronze.name=Steam Mixer
+gregtech.machine.mixer_steel.name=High Pressure Steam Mixer
 
 # Roaster
-gregtech.machine.roaster.steam.name=Steam Roaster
+gregtech.machine.roaster_bronze.name=Steam Roaster
+gregtech.machine.roaster_steel.name=High Pressure Steam Roaster
 gregtech.machine.roaster.lv.name=Basic Roaster
 gregtech.machine.roaster.mv.name=Advanced Roaster
 gregtech.machine.roaster.hv.name=Advanced Roaster II
@@ -128,7 +137,8 @@ gregtech.machine.roaster.uxv.name=Epic Roaster IV
 gregtech.machine.roaster.opv.name=Legendary Roaster
 
 # Vacuum Chamber
-gregtech.machine.vacuum_chamber.steam.name=Steam Vacuum Chamber
+gregtech.machine.vacuum_chamber_bronze.name=Steam Vacuum Chamber
+gregtech.machine.vacuum_chamber_steel.name=High Pressure Steam Vacuum Chamber
 gregtech.machine.vacuum_chamber.lv.name=Basic Vacuum Chamber
 gregtech.machine.vacuum_chamber.mv.name=Advanced Vacuum Chamber
 gregtech.machine.vacuum_chamber.hv.name=Advanced Vacuum Chamber II
@@ -218,6 +228,21 @@ gregtech.machine.bubble_column_reactor.uiv.name=Epic Bubble Column Reactor III
 gregtech.machine.bubble_column_reactor.uxv.name=Epic Bubble Column Reactor IV
 gregtech.machine.bubble_column_reactor.opv.name=Legendary Bubble Column Reactor
 
+# Dryer
+gregtech.machine.dryer.lv.name=Basic Dryer
+gregtech.machine.dryer.mv.name=Advanced Dryer
+gregtech.machine.dryer.hv.name=Advanced Dryer II
+gregtech.machine.dryer.ev.name=Advanced Dryer III
+gregtech.machine.dryer.iv.name=Elite Dryer
+gregtech.machine.dryer.luv.name=Elite Dryer II
+gregtech.machine.dryer.zpm.name=Elite Dryer III
+gregtech.machine.dryer.uv.name=Ultimate Dryer
+gregtech.machine.dryer.uhv.name=Epic Dryer
+gregtech.machine.dryer.uev.name=Epic Dryer II
+gregtech.machine.dryer.uiv.name=Epic Dryer III
+gregtech.machine.dryer.uxv.name=Epic Dryer IV
+gregtech.machine.dryer.opv.name=Legendary Dryer
+
 # Recipemaps
 recipemap.coagulation_tank.name=Coagulation
 recipemap.vulcanizing_press.name=Vulcanization
@@ -230,3 +255,8 @@ recipemap.crystallizer.name=Crystallizer
 recipemap.bubble_column_reactor.name=Bubble Column Reactor
 recipemap.fluidized_bed_reactor.name=Fluidized Bed Reactor
 recipemap.polymerization_tank.name=Polymerization Tank
+
+# Metaitems
+metaitem.catalyst_bed_support_grid.name=Catalyst Bed Support Grid
+metaitem.conveyor.steam.name=Steam Conveyor
+metaitem.pump.steam.name=Steam Pum

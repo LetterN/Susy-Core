@@ -1,5 +1,6 @@
 package supersymmetry.client.renderer.textures;
 
+import gregtech.api.gui.resources.SteamTexture;
 import gregtech.client.renderer.texture.cube.OrientedOverlayRenderer;
 import gregtech.client.renderer.texture.cube.SimpleSidedCubeRenderer;
 import net.minecraftforge.fml.common.Mod;
@@ -18,6 +19,8 @@ public class SusyTextures {
     public static OrientedOverlayRenderer TRICKLE_BED_REACTOR_OVERLAY;
     public static OrientedOverlayRenderer CRYSTALLIZER_OVERLAY;
     public static OrientedOverlayRenderer BUBBLE_COLUMN_REACTOR_OVERLAY;
+    public static OrientedOverlayRenderer DRYER_OVERLAY;
+    public static SteamTexture INT_CIRCUIT_OVERLAY;
 
     public SusyTextures(){
     }
@@ -33,5 +36,7 @@ public class SusyTextures {
         TRICKLE_BED_REACTOR_OVERLAY = new OrientedOverlayRenderer("machines/trickle_bed_reactor");
         CRYSTALLIZER_OVERLAY = new OrientedOverlayRenderer("machines/crystallizer");
         BUBBLE_COLUMN_REACTOR_OVERLAY = new OrientedOverlayRenderer("machines/bubble_column_reactor");
+        DRYER_OVERLAY = new OrientedOverlayRenderer("machines/dryer");
+        INT_CIRCUIT_OVERLAY = SteamTexture.fullImage("textures/gui/progress_bar/int_circuit_overlay_%s.png");
     }
 }
